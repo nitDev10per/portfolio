@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nitin Lodhi | Software Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <style>
+        :root {
+            --primary-color: #00ffff;
+            --bg-color: #000;
+            --section-bg-color: #1a1a1a;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: #e0e0e0;
+            transition: background-color 0.5s;
+        }
+
+        h1,
+        h2,
+        h3,
+        header nav a {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        header {
+            background-color: #111;
+            color: var(--primary-color);
+            padding: 20px 10px;
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        header nav {
+            margin-top: 15px;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        header nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+            padding: 5px 10px;
+        }
+
+        header nav a:hover {
+            color: #fff;
+        }
+
+        .logo {
+            height: 50px;
+            width: 50px;
+            position: fixed;
+            left: 20px;
+            top: 10px;
+            z-index: 10;
+            border: 3px solid var(--primary-color);
+            border-radius: 50%;
+            transition: border-color 0.5s;
+        }
+
+        section {
+            padding: 30px 20px;
+            margin: 30px 10px;
+            background-color: var(--section-bg-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 255, 255, 0.2);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #111;
+            color: var(--primary-color);
+            text-align: center;
+            padding: 15px 10px;
+            border-top: 2px solid var(--primary-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .logo {
+                height: 40px;
+                width: 40px;
+                top: 10px;
+                left: 10px;
+            }
+
+            section {
+                margin: 20px 10px;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+            }
+
+            .projects-list li,
+            .experience-list li,
+            .skills li,
+            .certifications li,
+            .education li,
+            .hobbies li {
+                font-size: 0.95rem;
+            }
+
+            footer p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header nav a {
+                font-size: 0.9rem;
+                padding: 4px 8px;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+            }
+
+            section {
+                padding: 20px 10px;
+            }
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        /* Responsive part */
+        @media (max-width: 700px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: #222;
+                margin-top: 10px;
+                padding: 10px 0;
+                border-radius: 8px;
+
+            }
+
+            .nav-links.active {
+                display: flex;
+
+            }
+
+            #nav {
+                min-height: 40px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <img src="logo.png" alt="Nitin Lodhi Logo" class="logo"
+        style="height: 50px; width: 50px; margin-right: 20px; vertical-align: middle; position: fixed; left: 20px; top: 6px; z-index: 10; border: 3px solid var(--primary-color); border-radius: 50%; transition: border-color 0.5s;">
+
+    <div class="menu-toggle" id="menu-toggle"
+        style="font-size: 20px; position: fixed; right: 20px; top: 6px; z-index: 10; color: var(--primary-color);">
+        &#9776;</div>
+    <header style="position: sticky; top: -120px; padding: 20px 70px; z-index: 5;">
+        <div class="container">
+            <h1>Nitin Lodhi</h1>
+            <p>Software Engineer | Developer | Problem Solver</p>
+
+            <nav id="nav" style=" padding-top: 20px;">
+
+                <div class="nav-links" id="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#education">Education</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#hobbies">Hobbies</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <img src="banner.png" alt="Nitin Lodhi" style="width: 100%; display: block; filter: brightness(70%);">
+
+    <section id="about" data-color="#00ffff">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I'm a versatile developer who began with Android development using Kotlin & Java, and have since
+                expanded into full-stack web and cross-platform mobile development. Currently working in a tech company,
+                I've gained hands-on experience with a wide range of technologies including Java, Kotlin, Flutter,
+                React, Next.js, and more—constantly evolving my skills to build efficient, scalable, and impactful
+                digital solutions.
+            </p>
+            <p>
+                Currently, I am working in a company where I initially contributed as a mobile app developer and am now
+                actively involved in web development, along with Figma design and video editing tasks. This hands-on
+                experience has not only sharpened my technical skills but also given me a practical understanding of
+                end-to-end development processes—from design to deployment.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section id="projects" data-color="#ff00ff">
+        <div class="container">
+          <h2>Projects</h2>
+          <p>These are my own learning projects, not company projects. I created these to enhance my skills and
+            explore new technologies.</p>
+          <ul class="projects-list">
+            <li>
+              <strong>Kondi</strong> - Web 4 Player 2D Game (Unique) - Jan 2022<br>
+              My self-developed first web project: a life simulation Indian game inspired by childhood
+              experiences. Ludo King type, but this game wasn’t available digitally, so I built it.<br>
+              Utilized Basic HTML, CSS, and JavaScript for development.<br>
+              <a href="#">Play Game</a> | <a href="https://github.com/nitDev10per/kondi">GitHub</a>
+            </li>
+            <li>
+              <strong>QuickStore</strong> - Android App - Aug 2022<br>
+              My first Android project: solves a real-life problem by managing real-time item counts and user
+              authentication.<br>
+              Skills Applied: Java, OOP, Android Studio, Firebase.<br>
+              <a href="#">Download APK</a> | <a href="https://github.com/nitDev10per/QuickStore">GitHub</a>
+            </li>
+            <li>
+              <strong>Bubble.io Assignment</strong> - Customer Feedback & Ticketing System - Feb 2022<br>
+              Built a complete feedback management system for service providers.<br>
+              Skills Applied: HTML, CSS, JavaScript.<br>
+              <a href="#">Demo</a> | <a href="https://github.com/nitDev10per/bubble-assignment">GitHub</a>
+            </li>
+            <li>
+              <strong>Netclan</strong> - May 2024<br>
+              Built this UI-based project in a day without any Figma reference.<br>
+              <a href="https://github.com/nitDev10per/Netclan/tree/main/app">GitHub</a>
+            </li>
+            <li>
+              <strong>Orbital Yatra</strong> - NASA Space Apps Challenge - Oct 2024<br>
+              Built with a team of 4, I developed the frontend and deployed the web app.<br>
+              Skills: HTML, CSS, JavaScript, DigitalOcean.<br>
+              <a href="#">Nasa Space Apps</a>
+            </li>
+            <li>
+              <strong>OpeninApp</strong> - Jul 2024<br>
+              Created UI and API functionality using libraries in under 10 hours.<br>
+              <a href="https://github.com/nitDev10per/openinapp">GitHub</a>
+            </li>
+            <li>
+              <strong>Latest Movies</strong> - Feb 2024<br>
+              Movie info app using TMDB API. Java, XML, Retrofit, RecyclerView used.<br>
+              <a href="https://github.com/nitDev10per/Assignment-Project-Show-Movies">GitHub</a>
+            </li>
+            <li>
+              <strong>Text Editor</strong> - Feb 2024<br>
+              Canva-like Android app to create notes and documents like resumes.<br>
+              <a href="#">Demo</a>
+            </li>
+            <li>
+              <strong>User Notes</strong> - Feb 2024<br>
+              Single-activity app with login, CRUD on notes, and Google login.<br>
+              <a href="https://github.com/nitDev10per/UserNotes">GitHub</a>
+            </li>
+            <li>
+              <strong>Feedback Management Ticket System</strong> - Feb 2024<br>
+              Complete system for service feedback with ticketing and insights.<br>
+              <a href="https://nitdev10per.github.io/customer-feedback-managing-ticket-system/">Live Demo</a>
+            </li>
+          </ul>
+          <div style="margin-top: 20px; text-align: center;">
+            <a href="https://github.com/nitDev10per?tab=repositories" target="_blank" style="color: #0077cc; font-weight: bold;">🔗 View More Projects on GitHub</a>
+          </div>
+        </div>
+      </section>
+      
+
+    <section id="skills" data-color="#ffa500">
+        <div class="container">
+            <h2>Skills</h2>
+            <h3>Web Technologies</h3>
+            <ul>
+                <li>HTML5, CSS3, JavaScript, Typescript, React.js, Next.js</li>
+                <li>MongoDB, Tailwind, MUI, Bootstrap, SaaS</li>
+                <li>Design Patterns, Testing (Cypress), RESTful APIs, State Management</li>
+                <li>Responsive Design, AngularJS (Basics)</li>
+            </ul>
+
+            <h3>Mobile Development</h3>
+            <ul>
+                <li>React Native, Flutter, Android (XML, MVVM, Jetpack Compose)</li>
+                <li>Unit Testing, Retrofit, Dagger</li>
+            </ul>
+
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>Java, Kotlin, C, C++, Python, Dart</li>
+                <li>DSA, OOP</li>
+            </ul>
+
+            <h3>Software Tools</h3>
+            <ul>
+                <li>Git, GitHub, Android Studio, Visual Studio Code, Figma, Canva</li>
+                <li>Debugging, Video/Photo Editing</li>
+            </ul>
+    </section>
+
+    <section id="experience" data-color="#00ff00" style="padding: 60px 0; background-color: #f9f9f9;">
+        <div class="container" style="max-width: 1000px; margin: auto; padding: 20px;">
+            <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 40px; color: #333;">Experience</h2>
+
+            <!-- Bhoomicam Experience -->
+            <div class="experience-item" style="margin-bottom: 40px;">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 10px;">
+                    <img src="logoBhoomicam.png" alt="Bhoomicam Logo" style="width: 60px; border-radius: 8px;">
+                    <h3 style="font-size: 1.5rem; color: #222; margin: 0;">
+                        <a href="https://bhoomicam.com" target="_blank"
+                            style="color: #222; text-decoration: none;">Bhoomicam, IIT Roorkee</a>
+                    </h3>
+                </div>
+                <p style="font-weight: bold; color: #555;">Web and Mobile App Developer &mdash; Full-time | Onsite | May
+                    2024 – Present</p>
+                <ul style="line-height: 1.7; color: #444;">
+                    <li>Developing and maintaining the flagship web tool <strong><a
+                                href="https://sense.bhoomicam.com/login" target="_blank">Bhoomicrop
+                                Analytics</a></strong>
+                        using <strong>Next.js</strong>.</li>
+                    <li>Designed and launched the <strong><a target="_blank">Bhoomicam Mobile App</a></strong> using
+                        <strong>Flutter</strong>.</li>
+                    <li>Enhanced the <strong><a href="https://bhoomicam.com" target="_blank">Bhoomicam
+                                Website</a></strong> and </li>
+                    <li>Developing and maintaining the Cold Storage Website <strong><a
+                                href="https://Storage.bhoomicam.com" target="_blank">Bhoomicam Cold Sotrage
+                                Managemnet</a></strong>
+                        using <strong>Next.js</strong>.</li>
+                    <li>Collaborated with cross-functional teams to deliver seamless experiences across platforms.</li>
+                </ul>
+                <p style="font-size: 1rem; color: #222;"><strong>Skills:</strong> HTML5, CSS3, JavaScript, TypeScript,
+                    React.js, Next.js, MongoDB, Tailwind, MUI, Bootstrap, SASS, Responsive Design, AngularJS (Basics),
+                    Figma</p>
+
+                <!-- Projects -->
+                <div style="margin-top: 15px;">
+                    <p style="font-size: 1rem; font-weight: bold; color: #333;">Projects:</p>
+                    <ul style="line-height: 1.7; color: #444; list-style-type: disc; margin-left: 20px;">
+                        <li><a href="https://sense.bhoomicam.com/login" target="_blank"
+                                style="color: #0077cc;">Bhoomicrop
+                                Analytics Web Tool</a> – Next.js-based data analysis dashboard.</li>
+                        <li><a href="https://bhoomicam.com" target="_blank" style="color: #0077cc;">Bhoomicam
+                                Website</a> – Company’s main website with performance optimizations.</li>
+                        <li><a href="https://Storage.bhoomicam.com" target="_blank" style="color: #0077cc;">Cold
+                                Storage Management Tool</a> – React.js-based storage management dashboard.</li>
+                        <li><a target="_blank" style="color: #0077cc;">Bhoomicam Mobile App</a> – Built with Flutter for
+                            Android & iOS platforms.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- AppsAiT Experience -->
+            <div class="experience-item" style="margin-bottom: 40px;">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 10px;">
+                    <img src="appsait logo.jpg" alt="AppsAiT Logo" style="width: 60px; border-radius: 8px;">
+                    <h3 style="font-size: 1.5rem; color: #222; margin: 0;">
+                        <a href="https://www.linkedin.com/company/appsait/" target="_blank"
+                            style="color: #222; text-decoration: none;">AppsAiT, Delhi, India</a>
+                    </h3>
+                </div>
+                <p style="font-weight: bold; color: #555;">Mobile Developer Intern &mdash; Remote | Sep 2023 – May 2024
+                </p>
+                <ul style="line-height: 1.7; color: #444;">
+                    <li>Contributed to the design and development of apps using <strong>React Native</strong> and
+                        <strong>Android (Java)</strong>.
+                    </li>
+                    <li>Resolved bugs and optimized app features to improve UX and performance.</li>
+                    <li>Worked using <strong>Git</strong> and <strong>Figma</strong> in collaborative team setups.</li>
+                    <li>Projects: <strong>Screen Recorder</strong>, <strong>Drum Pads</strong>, and currently
+                        <strong>Plant Tracker</strong>.
+                    </li>
+                </ul>
+                <p style="font-size: 1rem; color: #222;"><strong>Skills:</strong> Flutter, React Native, Android (XML,
+                    MVVM, Jetpack Compose, Retrofit, Dagger, Unit Testing), Git, Figma</p>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <section id="education" data-color="#3399ff">
+        <div class="container">
+            <h2>Education</h2>
+            <ul class="education">
+                <li>
+                    <strong>Bachelor of Technology in Computer Science</strong>
+                    <br> Gyan Sagar College of Engineering, Sagar (RGPV)
+                    <br> Grade/GPA: 7.30
+                    <br> September 2021 - Present
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="certifications" data-color="#9933cc">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul class="certifications">
+                <li>Nasa Space Apps Challenge 2024 Participant</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="hobbies" data-color="#ff3300">
+        <div class="container">
+            <h2>Hobbies</h2>
+            <ul class="hobbies">
+                <li>Acting, Dancing, Painting, Sketching</li>
+                <li>Physics, Math & Creative Problem Solving</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" data-color="#00cccc">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:nitinyou039@gmail.com">nitinyou039@gmail.com</a></p>
+            <p>Phone: <a href="tel:+919630869627">+91 9630869627</a></p>
+            <p>Location: Damoh, Madhya Pradesh, India</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nitin Lodhi. All rights reserved. | <a href="https://www.linkedin.com/in/nitin-lod215b72260"
+                    target="_blank"><i class="fab fa-linkedin icon"></i> LinkedIn</a> | <a
+                    href="https://github.com/nitDev10per" target="_blank"><i class="fab fa-github icon"></i> GitHub</a> | 
+                    <a href="https://www.instagram.com/nitin.pg/" target="_blank">
+                        <i class="fab fa-instagram icon"></i> Instagram
+                      </a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const sections = document.querySelectorAll("section");
+
+        window.addEventListener("scroll", () => {
+            let currentSection = null;
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                    currentSection = section;
+                }
+            });
+            if (currentSection) {
+                const color = currentSection.getAttribute("data-color") || "#00ffff";
+                document.documentElement.style.setProperty("--primary-color", color);
+            }
+        });
+
+        const toggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('#nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>
