@@ -52,10 +52,10 @@
             font-size: 1.8rem;
         }
 
-        #logo{
-                height: 50px;
-                width: 50px;
-            }
+        #logo {
+            height: 50px;
+            width: 50px;
+        }
 
         header nav {
             margin-top: 15px;
@@ -155,13 +155,6 @@
                 margin: 20px 10px;
             }
 
-            h2 {
-                font-size: 1rem;
-            }
-
-            h3 {
-                font-size: 1rem;
-            }
 
             .projects-list li,
             .experience-list li,
@@ -176,11 +169,11 @@
                 font-size: 0.9rem;
             }
 
-            header{
+            header {
                 top: -100px;
             }
 
-            #logo{
+            #logo {
                 height: 40px;
                 width: 40px;
             }
@@ -192,7 +185,12 @@
                 padding: 4px 8px;
             }
 
+
             h2 {
+                font-size: 1rem;
+            }
+
+            h3 {
                 font-size: 1rem;
             }
 
@@ -204,11 +202,11 @@
                 font-size: 0.6rem;
             }
 
-            header{
+            header {
                 top: -70px;
             }
 
-            #logo{
+            #logo {
                 height: 30px;
                 width: 30px;
             }
@@ -240,12 +238,12 @@
                 display: block;
             }
 
-            
-            header{
+
+            header {
                 top: 0px;
             }
 
-            #logo{
+            #logo {
                 height: 40px;
                 width: 40px;
             }
@@ -257,8 +255,10 @@
 
 <body>
 
-    <img id=logo src="logo.png" alt="Nitin Lodhi Logo" class="logo"
-        style="margin-right: 20px; vertical-align: middle; position: fixed; left: 20px; top: 6px; z-index: 10; border: 3px solid var(--primary-color); border-radius: 50%; transition: border-color 0.5s;">
+    <a href="https://www.instagram.com/nitin.pg/" target="_blank">
+        <img id="logo" src="logo.png" alt="Nitin Lodhi Logo" class="logo"
+            style="margin-right: 20px; vertical-align: middle; position: fixed; left: 20px; top: 6px; z-index: 10; border: 3px solid var(--primary-color); border-radius: 50%; transition: border-color 0.5s;">
+    </a>
 
     <div class="menu-toggle" id="menu-toggle"
         style="font-size: 20px; position: fixed; right: 20px; top: 6px; z-index: 10; color: var(--primary-color);">
@@ -281,7 +281,8 @@
                     <a href="#contact">Contact</a>
                     <a href="https://www.linkedin.com/in/nitin-lodhi-215b72260/" target="_blank"><i
                             class="fab fa-linkedin icon"></i></a>
-                    <a href="https://drive.google.com/file/d/1csy3lDSCSIvcWnt7iPHctqzhVrygtB8_/view?usp=sharing" target="_blank"><i class="fas fa-file icon"></i> Resume</a>
+                    <a href="https://drive.google.com/file/d/1csy3lDSCSIvcWnt7iPHctqzhVrygtB8_/view?usp=sharing"
+                        target="_blank"><i class="fas fa-file icon"></i> Resume</a>
                 </div>
             </nav>
         </div>
@@ -312,80 +313,102 @@
 
     <section id="projects" data-color="#ff00ff">
         <div class="container">
-          <h2>Projects</h2>
-          <p>These are my own learning projects, not company projects. I created these to enhance my skills and
-            explore new technologies.</p>
-          <ul class="projects-list">
-            <li>
-                <strong>Kondi</strong> – Web 4-Player 2D Game (Unique) – <em>Jan 2022</em><br>
-                This was my first ever web project. The idea came during exam time — I had just learned basic HTML and CSS in 3 days, and since I already knew Java, I jumped into JavaScript without any formal learning, just looked at some syntax and started building.<br><br>
-                I was thinking about Ludo and suddenly remembered a childhood game we used to play — something unique, not available digitally. That gave me the idea: why not create it myself?<br><br>
-                I didn’t watch any tutorials or take any reference. Just opened the tools and tried to build something from scratch. I didn’t even know games could be built on the web — I only knew some basics and was curious to see what I could make using just HTML, CSS, and JS.<br><br>
-                I’ve always believed in building things from scratch, without libraries. I enjoy exploring the raw logic behind things. Even in web development, I try to go deep and understand the abstract layer, instead of just using ready-made solutions.<br><br>
-                I studied CS because I wanted to build an OS one day and directly connect with hardware — but I realized how much abstraction there is in modern systems. That’s why projects like this matter to me — they’re my way of exploring the core.<br><br>
-                <strong>Tech:</strong> Basic HTML, CSS, JavaScript<br>
-                <a href="https://nitdev10per.github.io/Kondi/" target="_blank">Play Game</a> |
-                <a href="https://github.com/nitDev10per/kondi" target="_blank">GitHub</a>
-              </li>
-            <li>
-              <strong>QuickStore</strong> - Android App - Aug 2022<br>
-              My first Android project: solves a real-life problem by managing real-time item counts and user
-              authentication.<br>
-              Skills Applied: Java, OOP, Android Studio, Firebase.<br>
-              <a href="https://github.com/nitDev10per/QuicCount/raw/refs/heads/master/base.apk">Download APK</a> | <a href="https://github.com/nitDev10per/QuicCount">GitHub</a>
-            </li>
-            <li>
-                <strong>Bubble.io Assignment</strong> – Customer Feedback & Ticketing System – <em>Feb 2022</em><br>
-                This was my second web development project, which I completed in just 2 days as part of a job assignment. At that time, I had no deep knowledge of web development — still, I decided to build everything from scratch without any tutorials or AI help.<br><br>
-                I implemented login and registration using local storage, a complete ticketing system where users can view, create, edit, and track tickets — all done with basic web technologies.<br><br>
-                I accepted the challenge and pushed myself to finish it on time, learning and implementing everything hands-on.<br><br>
-                <strong>Skills Applied:</strong> HTML, CSS, JavaScript<br>
-                <a href="https://nitdev10per.github.io/customer-feedback-managing-ticket-system/index.html" target="_blank">Demo</a> |
-                <a href="https://github.com/nitDev10per/bubble-assignment" target="_blank">GitHub</a>
-              </li>
-            <li>
-              <strong>Netclan</strong> - May 2024<br>
-              Built this UI-based project in a day without any Figma reference.<br>
-              <a href="https://github.com/nitDev10per/Netclan/blob/main/app/release/app-release.apk">Demo</a> | <a href="https://github.com/nitDev10per/Netclan/tree/main/app">GitHub</a>  
-            </li>
-            <li>
-              <strong>Orbital Yatra</strong> - NASA Space Apps Challenge - Oct 2024<br>
-              Built with a team of 4, I developed the frontend and deployed the web app.<br>
-              Skills: HTML, CSS, JavaScript, DigitalOcean.<br>
-              <a href="https://github.com/nitDev10per/Space-Apps">Nasa Space Apps</a>
-            </li>
-            <li>
-              <strong>OpeninApp</strong> - Jul 2024<br>
-              Created UI and API functionality using libraries in under 10 hours.<br>
-              <a href="https://github.com/nitDev10per/openinapp/raw/refs/heads/main/app-debug.apk">Download APK</a> | </a><a href="https://github.com/nitDev10per/openinapp/blob/main/app-debug.apk">GitHub</a>
-            </li>
-            <li>
-              <strong>Latest Movies</strong> - Feb 2024<br>
-              Movie info app using TMDB API. Java, XML, Retrofit, RecyclerView used.<br>
-              <a href="https://github.com/nitDev10per/openinapp/raw/refs/heads/main/app-debug.apk">Download APK</a> | <a href="https://github.com/nitDev10per/Assignment-Project-Show-Movies">GitHub</a>
-            </li>
-            <li>
-              <strong>Text Editor</strong> - Feb 2024<br>
-              Canva-like Android app to create notes and documents like resumes.<br>
-              <a href="https://github.com/nitDev10per/Texteditor/raw/refs/heads/main/app-release.apk">Download APK</a> | <a href="https://github.com/nitDev10per/Texteditor/blob/main">Demo</a>
-            </li>
-            <li>
-              <strong>User Notes</strong> - Feb 2024<br>
-              Single-activity app with login, CRUD on notes, and Google login.<br>
-              <a href="https://github.com/nitDev10per/UserNotes/raw/refs/heads/main/app-release.apk">Download APK</a> | <a href="https://github.com/nitDev10per/UserNotes">GitHub</a>
-            </li>
-            <!-- <li>
+            <h2>Projects</h2>
+            <p>These are my own learning projects, not company projects. I created these to enhance my skills and
+                explore new technologies.</p>
+            <ul class="projects-list">
+                <li>
+                    <strong>Kondi</strong> – Web 4-Player 2D Game (Unique) – <em>Jan 2022</em><br>
+                    This was my first ever web project. The idea came during exam time — I had just learned basic HTML
+                    and CSS in 3 days, and since I already knew Java, I jumped into JavaScript without any formal
+                    learning, just looked at some syntax and started building.<br><br>
+                    I was thinking about Ludo and suddenly remembered a childhood game we used to play — something
+                    unique, not available digitally. That gave me the idea: why not create it myself?<br><br>
+                    I didn’t watch any tutorials or take any reference. Just opened the tools and tried to build
+                    something from scratch. I didn’t even know games could be built on the web — I only knew some basics
+                    and was curious to see what I could make using just HTML, CSS, and JS.<br><br>
+                    I’ve always believed in building things from scratch, without libraries. I enjoy exploring the raw
+                    logic behind things. Even in web development, I try to go deep and understand the abstract layer,
+                    instead of just using ready-made solutions.<br><br>
+                    I studied CS because I wanted to build an OS one day and directly connect with hardware — but I
+                    realized how much abstraction there is in modern systems. That’s why projects like this matter to me
+                    — they’re my way of exploring the core.<br><br>
+                    <strong>Tech:</strong> Basic HTML, CSS, JavaScript<br>
+                    <a href="https://nitdev10per.github.io/Kondi/" target="_blank">Play Game</a> |
+                    <a href="https://github.com/nitDev10per/kondi" target="_blank">GitHub</a>
+                </li>
+                <li>
+                    <strong>QuickStore</strong> - Android App - Aug 2022<br>
+                    My first Android project: solves a real-life problem by managing real-time item counts and user
+                    authentication.<br>
+                    Skills Applied: Java, OOP, Android Studio, Firebase.<br>
+                    <a href="https://github.com/nitDev10per/QuicCount/raw/refs/heads/master/base.apk">Download APK</a> |
+                    <a href="https://github.com/nitDev10per/QuicCount">GitHub</a>
+                </li>
+                <li>
+                    <strong>Bubble.io Assignment</strong> – Customer Feedback & Ticketing System – <em>Feb 2022</em><br>
+                    This was my second web development project, which I completed in just 2 days as part of a job
+                    assignment. At that time, I had no deep knowledge of web development — still, I decided to build
+                    everything from scratch without any tutorials or AI help.<br><br>
+                    I implemented login and registration using local storage, a complete ticketing system where users
+                    can view, create, edit, and track tickets — all done with basic web technologies.<br><br>
+                    I accepted the challenge and pushed myself to finish it on time, learning and implementing
+                    everything hands-on.<br><br>
+                    <strong>Skills Applied:</strong> HTML, CSS, JavaScript<br>
+                    <a href="https://nitdev10per.github.io/customer-feedback-managing-ticket-system/index.html"
+                        target="_blank">Demo</a> |
+                    <a href="https://github.com/nitDev10per/bubble-assignment" target="_blank">GitHub</a>
+                </li>
+                <li>
+                    <strong>Netclan</strong> - May 2024<br>
+                    Built this UI-based project in a day without any Figma reference.<br>
+                    <a href="https://github.com/nitDev10per/Netclan/blob/main/app/release/app-release.apk">Demo</a> | <a
+                        href="https://github.com/nitDev10per/Netclan/tree/main/app">GitHub</a>
+                </li>
+                <li>
+                    <strong>Orbital Yatra</strong> - NASA Space Apps Challenge - Oct 2024<br>
+                    Built with a team of 4, I developed the frontend and deployed the web app.<br>
+                    Skills: HTML, CSS, JavaScript, DigitalOcean.<br>
+                    <a href="https://github.com/nitDev10per/Space-Apps">Nasa Space Apps</a>
+                </li>
+                <li>
+                    <strong>OpeninApp</strong> - Jul 2024<br>
+                    Created UI and API functionality using libraries in under 10 hours.<br>
+                    <a href="https://github.com/nitDev10per/openinapp/raw/refs/heads/main/app-debug.apk">Download
+                        APK</a> | </a><a
+                        href="https://github.com/nitDev10per/openinapp/blob/main/app-debug.apk">GitHub</a>
+                </li>
+                <li>
+                    <strong>Latest Movies</strong> - Feb 2024<br>
+                    Movie info app using TMDB API. Java, XML, Retrofit, RecyclerView used.<br>
+                    <a href="https://github.com/nitDev10per/openinapp/raw/refs/heads/main/app-debug.apk">Download
+                        APK</a> | <a href="https://github.com/nitDev10per/Assignment-Project-Show-Movies">GitHub</a>
+                </li>
+                <li>
+                    <strong>Text Editor</strong> - Feb 2024<br>
+                    Canva-like Android app to create notes and documents like resumes.<br>
+                    <a href="https://github.com/nitDev10per/Texteditor/raw/refs/heads/main/app-release.apk">Download
+                        APK</a> | <a href="https://github.com/nitDev10per/Texteditor/blob/main">Demo</a>
+                </li>
+                <li>
+                    <strong>User Notes</strong> - Feb 2024<br>
+                    Single-activity app with login, CRUD on notes, and Google login.<br>
+                    <a href="https://github.com/nitDev10per/UserNotes/raw/refs/heads/main/app-release.apk">Download
+                        APK</a> | <a href="https://github.com/nitDev10per/UserNotes">GitHub</a>
+                </li>
+                <!-- <li>
               <strong>Feedback Management Ticket System</strong> - Feb 2024<br>
               Complete system for service feedback with ticketing and insights.<br>
               <a href="https://nitdev10per.github.io/customer-feedback-managing-ticket-system/">Live Demo</a> | <a href="https://github.com/nitDev10per/customer-feedback-managing-ticket-system">GitHub</a>
             </li> -->
-          </ul>
-          <div style="margin-top: 20px; text-align: center;">
-            <a href="https://github.com/nitDev10per?tab=repositories" target="_blank" style="color: #0077cc; font-weight: bold;">🔗 View More Projects on GitHub</a>
-          </div>
+            </ul>
+            <div style="margin-top: 20px; text-align: center;">
+                <a href="https://github.com/nitDev10per?tab=repositories" target="_blank"
+                    style="color: #0077cc; font-weight: bold;">🔗 View More Projects on GitHub</a>
+            </div>
         </div>
-      </section>
-      
+    </section>
+
 
     <section id="skills" data-color="#ffa500">
         <div class="container">
@@ -438,7 +461,8 @@
                                 Analytics</a></strong>
                         using <strong>Next.js</strong>.</li>
                     <li>Designed and launched the <strong><a target="_blank">Bhoomicam Mobile App</a></strong> using
-                        <strong>Flutter</strong>.</li>
+                        <strong>Flutter</strong>.
+                    </li>
                     <li>Enhanced the <strong><a href="https://bhoomicam.com" target="_blank">Bhoomicam
                                 Website</a></strong> and </li>
                     <li>Developing and maintaining the Cold Storage Website <strong><a
@@ -523,13 +547,47 @@
 
     <section id="hobbies" data-color="#ff3300">
         <div class="container">
-            <h2>Hobbies</h2>
+            <h2>Hobbies & Creative Journey</h2>
+            <p>
+                Since childhood, I've always been naturally creative. I used to draw accurate pencil sketches, even
+                created my own anime characters with stories — at a time when digital tools or even TVs weren't common.
+                I would decorate my name creatively on notebooks, like modern graphic design.
+            </p>
+            <p>
+                Later, I developed a deep interest in Math and Physics. Whatever I learned, I applied it practically
+                using scrap materials. I built toys and science models with limited resources, becoming known in my
+                village for creativity. Schoolmates would ask me to make their science projects.
+            </p>
+            <p>
+                In 8th grade, I saw electronic sensors in a Science book, which inspired me to explore electronics
+                deeply. I started repairing gadgets and helping at my brother's electronics shop, where I now actively
+                contribute — it's one of our biggest successes.
+            </p>
+            <p>
+                I also dreamt of becoming an actor, so I practiced acting, dancing, and body movement exercises. My
+                style is always unique — I use my own approach in everything. To showcase my creativity, I learned
+                photo/video editing and started sharing my work on social media.
+            </p>
+            <p>
+                Later, I realized the future of acting might become digital — so I shifted towards Computer Science. I
+                wanted to explore how software connects with hardware, like how editors, games, or OS work behind the
+                scenes. That’s why I focused on web & app development.
+            </p>
+            <p>
+                Today, I enjoy using all my creative skills — whether it’s editing, graphics, UI design, or coding. I
+                never limit myself by job roles. If my company needs anything creative, I jump in — because I love doing
+                it.
+            </p>
             <ul class="hobbies">
-                <li>Acting, Dancing, Painting, Sketching</li>
-                <li>Physics, Math & Creative Problem Solving</li>
+                <li>Acting, Dancing, Video Editing, Graphic Design</li>
+                <li>Sketching, Animation Concepts, Story Creation</li>
+                <li>Math, Physics, Practical Innovation</li>
+                <li>Electronics, Repairing, DIY Project Building</li>
+                <li>Software Development & Real-world Integration</li>
             </ul>
         </div>
     </section>
+
 
     <section id="contact" data-color="#00cccc">
         <div class="container">
@@ -542,12 +600,13 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Nitin Lodhi. All rights reserved. | <a href="https://www.linkedin.com/in/nitin-lodhi-215b72260/"
-                    target="_blank"><i class="fab fa-linkedin icon"></i> LinkedIn</a> | <a
-                    href="https://github.com/nitDev10per" target="_blank"><i class="fab fa-github icon"></i> GitHub</a> | 
-                    <a href="https://www.instagram.com/nitin.pg/" target="_blank">
-                        <i class="fab fa-instagram icon"></i> Instagram
-                      </a>
+            <p>&copy; 2025 Nitin Lodhi. All rights reserved. | <a
+                    href="https://www.linkedin.com/in/nitin-lodhi-215b72260/" target="_blank"><i
+                        class="fab fa-linkedin icon"></i> LinkedIn</a> | <a href="https://github.com/nitDev10per"
+                    target="_blank"><i class="fab fa-github icon"></i> GitHub</a> |
+                <a href="https://www.instagram.com/nitin.pg/" target="_blank">
+                    <i class="fab fa-instagram icon"></i> Instagram
+                </a>
             </p>
         </div>
     </footer>
