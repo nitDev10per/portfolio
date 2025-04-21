@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nitin Lodhi | Software Engineer</title>
+    <link rel="icon" type="image/png" href="logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Open+Sans&display=swap"
         rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -37,15 +38,23 @@
         header {
             background-color: #111;
             color: var(--primary-color);
-            padding: 20px 10px;
+            padding: 20px 60px;
             text-align: center;
             border-bottom: 2px solid var(--primary-color);
+            position: sticky;
+            top: -110px;
+            z-index: 5;
         }
 
         header h1 {
             margin: 0;
             font-size: 1.8rem;
         }
+
+        #logo{
+                height: 50px;
+                width: 50px;
+            }
 
         header nav {
             margin-top: 15px;
@@ -84,7 +93,7 @@
             margin: 30px 10px;
             background-color: var(--section-bg-color);
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 255, 255, 0.2);
+            box-shadow: 0 2px 2px var(--primary-color);
         }
 
         h2 {
@@ -126,7 +135,7 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 1.5rem;
+                font-size: 1rem;
             }
 
             header nav {
@@ -146,11 +155,11 @@
             }
 
             h2 {
-                font-size: 1.3rem;
+                font-size: 1rem;
             }
 
             h3 {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
 
             .projects-list li,
@@ -165,6 +174,15 @@
             footer p {
                 font-size: 0.9rem;
             }
+
+            header{
+                top: -100px;
+            }
+
+            #logo{
+                height: 40px;
+                width: 40px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -174,11 +192,24 @@
             }
 
             h2 {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
 
             section {
                 padding: 20px 10px;
+            }
+
+            header div p {
+                font-size: 0.6rem;
+            }
+
+            header{
+                top: -70px;
+            }
+
+            #logo{
+                height: 30px;
+                width: 30px;
             }
         }
 
@@ -204,13 +235,20 @@
 
             }
 
-            #nav {
-                min-height: 40px;
-            }
-
             .menu-toggle {
                 display: block;
             }
+
+            
+            header{
+                top: 0px;
+            }
+
+            #logo{
+                height: 40px;
+                width: 40px;
+            }
+
         }
     </style>
 
@@ -218,18 +256,18 @@
 
 <body>
 
-    <img src="logo.png" alt="Nitin Lodhi Logo" class="logo"
-        style="height: 50px; width: 50px; margin-right: 20px; vertical-align: middle; position: fixed; left: 20px; top: 6px; z-index: 10; border: 3px solid var(--primary-color); border-radius: 50%; transition: border-color 0.5s;">
+    <img id=logo src="logo.png" alt="Nitin Lodhi Logo" class="logo"
+        style="margin-right: 20px; vertical-align: middle; position: fixed; left: 20px; top: 6px; z-index: 10; border: 3px solid var(--primary-color); border-radius: 50%; transition: border-color 0.5s;">
 
     <div class="menu-toggle" id="menu-toggle"
         style="font-size: 20px; position: fixed; right: 20px; top: 6px; z-index: 10; color: var(--primary-color);">
         &#9776;</div>
-    <header style="position: sticky; top: -120px; padding: 20px 70px; z-index: 5;">
+    <header>
         <div class="container">
             <h1>Nitin Lodhi</h1>
             <p>Software Engineer | Developer | Problem Solver</p>
 
-            <nav id="nav" style=" padding-top: 20px;">
+            <nav id="nav">
 
                 <div class="nav-links" id="nav-links">
                     <a href="#about">About</a>
